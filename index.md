@@ -1,11 +1,12 @@
 ---
 layout: default
-title: Student Blog
+title: David's Home Page
+description: Computer Science Home Page
 ---
 
 
-## Build you Home Page here 
-This is about your journey. Start now!!!
+## About Me
+Hi
 
 ## Overview of Hacks, Study and Tangibles
 Blogging in GitHub pages is a way to learn and code at the same time. 
