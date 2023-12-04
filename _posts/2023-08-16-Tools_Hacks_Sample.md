@@ -9,6 +9,7 @@ type: hacks
 ---
 
 ## Hacks
+
 > Complete the procedure below accurately.  These are absolutely required and must be 100% accurate for your success.
 
 ### GitHub Account
