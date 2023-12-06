@@ -10,5 +10,5 @@ type: hacks
 
 ## Link To My About Me Page
 
-> http://127.0.0.1:4200/Sans/
+> https://davidj1357.github.io/Sans/
 ```
