@@ -9,4 +9,4 @@ courses: { compsci: {week: 0} }
 ---
 
 ###    Talking About David
-David is good partner. He gets mad easily when I dont understand but I do get mad at him when he gets mad at me. David will help me though and when he is done it is fun to watch him play brawl stars. His posts look really cool with the custom font, color, and he added a video.
+David is good partner. He is dedicated to the class and works hard. His posts look really good because he uses his custom color, font, and he has even added his own video.  David is very smart about  coding and he helps me when I don't understand.
