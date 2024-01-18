@@ -3,29 +3,56 @@ toc: true
 comments: false
 layout: post
 title: Calculator MD
-description: Grab of the Calculator from APCSA repo.
+description: Calculator
 type: tangibles
 courses: { compsci: {week: 2} }
 ---
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
 
 <style>
-  .calculator-output {
+    body {   
+        
+        background-color: #33F6FF;
+    font-family: 'Arial', sans-serif;
+}
+
+h1, h2, h3 {
+     font-family: 'Lobster', cursive;
+}
+
+p {
+     font-family: 'Lobster', cursive;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+body {
+    border: 20px solid #e34234;
+    padding: 20px;
+}
+
+
+.inner-content {
+    color: #333; 
+    font-size: 18px; 
+    font-weight: bold; 
+}
+.calculator-output {
     /* calulator output 
       top bar shows the results of the calculator;
       result to take up the entirety of the first row;
       span defines 4 columns and 1 row
     */
-    grid-column: span 4;
-    grid-row: span 1;
+    grid-column: span 5;
+    grid-row: span 4;
   
     padding: 0.25em;
     font-size: 20px;
     border: 5px solid black;
   
-    display: flex;
-    align-items: center;
   }
 </style>
+  
 
 <!-- Add a container for the animation -->
 <div id="animation">
@@ -33,24 +60,25 @@ courses: { compsci: {week: 2} }
       <!--result-->
       <div class="calculator-output" id="output">0</div>
       <!--row 1-->
+      <div class="calculator-operation">x²</div>
+      <div class="calculator-number">0</div>
       <div class="calculator-number">1</div>
       <div class="calculator-number">2</div>
       <div class="calculator-number">3</div>
-      <div class="calculator-operation">+</div>
-      <!--row 2-->
       <div class="calculator-number">4</div>
       <div class="calculator-number">5</div>
       <div class="calculator-number">6</div>
-      <div class="calculator-operation">-</div>
-      <!--row 3-->
       <div class="calculator-number">7</div>
       <div class="calculator-number">8</div>
       <div class="calculator-number">9</div>
-      <div class="calculator-operation">*</div>
-      <!--row 4-->
-      <div class="calculator-clear">A/C</div>
-      <div class="calculator-number">0</div>
       <div class="calculator-number">.</div>
+      <div class="calculator-operation">+</div>
+      <div class="calculator-operation">-</div>
+      <div class="calculator-operation">*</div>
+      <div class="calculator-operation">/</div>
+      <div class="calculator-operation">Xⁿ</div>
+      <div class="calculator-operation">√</div>
+      <div class="calculator-clear">A/C</div>
       <div class="calculator-equals">=</div>
   </div>
 </div>
@@ -129,11 +157,19 @@ courses: { compsci: {week: 2} }
           case "*":
               result = first * second;
               break;
+          case "x²":
+              result = first * first;
+              break;
           case "/":
               result = first / second;
+              break; 
+          case "√":
+              result = Math.sqrt(first);
               break;
-          default: 
+          case "Xⁿ":
+              result = Math.pow(first, second)
               break;
+            
       }
       return result;
   }

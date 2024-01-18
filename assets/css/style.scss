@@ -9,8 +9,7 @@
     width: auto;
     height: auto;
     border-radius: 10px;
-    background-color: #21807c;
-    border: 3px solid black;
+    background-color: #0098C1;
     font-size: 1.5em;
 
     display: flex;
@@ -49,19 +48,21 @@
 // STYLING FOR CALCULATOR
   /* class to create the calculator's container; uses CSS grid dsiplay to partition off buttons */
   .calculator-container { 
-    width: 90vw; /* this width and height is specified for mobile devices by default */
+    width: 100vw; /* this width and height is specified for mobile devices by default */
     height: 80vh;
     margin: 0 auto;
   
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* fr is a special unit; learn more here: https://css-tricks.com/introduction-fr-css-unit/  */
-    grid-template-rows: 0.5fr repeat(4, 1fr);
-    gap: 10px 10px;
+    grid-template-columns: repeat(5, 1fr) !important; /* fr is a special unit; learn more here: https://css-tricks.com/introduction-fr-css-unit/  */
+    grid-template-rows: 0.5fr repeat(4, 1fr) !important;
+    gap: 10px 0px;
+
+    color: white;
   }
   
   @media (min-width: 600px) { 
     .calculator-container {
-        width: 40vw;
+        width: 50vw;
         height: 80vh;
     }
   }
@@ -69,22 +70,35 @@
   /* styling for the calculator number button */
   .calculator-number {
     @extend .button;
+    padding: 10px;
+    margin: 5px;
   }
+  
 
   /* styling for the calculator operation button */
   .calculator-operation {
     @extend .button;
+    padding: 10px;
+    margin: 5px;
   }
   
   /* styling for the calculator clear button */
   .calculator-clear {
     @extend .button;
     background-color: #e68b1c;
+    padding: 10px;
+    margin: 5px;
   }
   
   /* styling for the calculator equals button */
   .calculator-equals {
     @extend .button;
     background-color: #e70f0f;
+    padding: 10px;
+    margin: 5px;
   }
 
+.calculator-output {
+  font-size: 100px !important;
+  padding: 10px !important;
+}
