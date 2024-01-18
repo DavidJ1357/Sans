@@ -4,7 +4,7 @@ comments: true
 layout: post
 title: Andrew Post
 description: Talking About David
-type: Hacks
+type: hacks
 courses: { compsci: {week: 0} }
 ---
 

@@ -2,8 +2,8 @@
 toc: false
 comments: true
 layout: post
-title: Week 2 Plan
-description: PBL Unit 1 / Week 2 plan using Utterance
+title: Week 2 Tangibles
+description: Week 2 Accomplishments and Roadblocks
 type: tangibles
 courses: { compsci: {week: 2} }
 ---
